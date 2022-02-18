@@ -3,7 +3,7 @@
 from predict import unzip_model, load_model_and_tokenizer, generate_summary
 
 # get model_zip_path
-model_zip_path = "/Users/zhenshanjin/Documents/Belmont/sandy/UtilityDaisies/DistillBartCNN_6_6/tmp/distilbart-cnn-6-6.zip"
+model_zip_path = "/tmp/distilbart-cnn-6-6.zip"
 model_path = unzip_model(model_zip_path)
 model, tokenizer = load_model_and_tokenizer(model_path)
 
