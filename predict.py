@@ -24,7 +24,7 @@ def load_model_and_tokenizer(model_path):
     return model, tokenizer
 
 def generate_summary(inputs, model, tokenizer):
-    summary_ids = model.generate(inputs["input_ids"], num_beams=4, max_length=5)
+    summary_ids = model.generate(inputs["input_ids"])
     summarization = tokenizer.batch_decode(summary_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
 
     return summarization
