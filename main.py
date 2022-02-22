@@ -1,5 +1,6 @@
 # from https://huggingface.co/sshleifer/distilbart-cnn-6-6
 
+import torch
 from predict import unzip_model, load_model_and_tokenizer, generate_summary
 
 # get model_zip_path
